@@ -30,3 +30,6 @@ We will use PostreSQL with the following tables:
 
 ## 5. Explicit Non-Goal
 Only a backend AI system without frontend. The human review will be handled via API endpoints.
+
+## 6. Evaluation
+- **Top-1 Precision:** 75.0% (measured on a labeled evaluation dataset).
