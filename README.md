@@ -33,3 +33,35 @@ Only a backend AI system without frontend. The human review will be handled via 
 
 ## 6. Evaluation
 - **Top-1 Precision:** 75.0% (measured on a labeled evaluation dataset).
+
+## 7. Architecture Diagram
+```ascii
+Images (batch) -> Vision Model -> {tags, caption, confidence} -> embed(caption) -> image_vectors
+Posts -> embed(post text) -> post_vectors
+
+GET /posts/:id/images
+ ↳ Similarity Ranking (image_vectors × post_vector)
+    ↳ Mismatch Guard (tags + threshold + confidence)
+       ├─ Suggested image (ranked, explained)
+       └─ "No good match" + explanation
+
+```
+
+## 8. Run & Seed Steps
+
+To run this project locally:
+
+1. Ensure Docker is running.
+
+2. Spin up the database: docker compose up -d
+
+3. Seed the database: python src/seed_db.py
+
+4. Start the API server: cd src && uvicorn main:app --reload
+
+5. Run the tests: pytest src/test_engine.py
+
+## 9. 
+1. The system currently evaluates a very small corpus of ~50 images.
+
+2. The embeddings rely on external API calls to Google Gemini, meaning processing speed is subject to network latency and rate limits rather than local compute power.

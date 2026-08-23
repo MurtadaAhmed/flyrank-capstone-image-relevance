@@ -24,11 +24,8 @@
 ```
 **[x] Low-confidence classifications are flagged instead of accepted.**
 ```
-Article: "Deep Sea Marine Biology and Coral Reef Ecosystems"
-Top Candidate: bear (5).jpg (Subject: 'Brown bears')
-Similarity Score: 0.5259
-Mismatch Guard Status: REJECTED
-Reason: Similarity score 0.526 below threshold 0.60
+if candidate_image.get("confidence", 0.0) < 0.85:
+    return False, f"Vision confidence too low ({candidate_image.get('confidence')})"
 ```
 **[x] Images are processed through a batch background job with retries.**
 ```
