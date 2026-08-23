@@ -1,0 +1,27 @@
+[
+  {
+    "id": "post-1",
+    "title": "The Secret Life of Red Foxes",
+    "content": "Red foxes (Vulpes vulpes) are adaptable wild canids recognized by their reddish-orange coat, white chest, and bushy tails. They thrive in varied habitats ranging from woodlands to urban fringes."
+  },
+  {
+    "id": "post-2",
+    "title": "Gray Wolf Pack Dynamics and Territorial Behavior",
+    "content": "Gray wolves are apex predators that live and hunt in organized social packs. Their large size, gray and tan coats, and cooperative hunting strategies distinguish them from smaller solitary canines."
+  },
+  {
+    "id": "post-3",
+    "title": "Caring for Domestic Puppies and Dogs",
+    "content": "Welcoming a new puppy into your home requires consistent training, proper feeding schedules, and playtime. Domestic dogs form strong social bonds with humans."
+  },
+  {
+    "id": "post-4",
+    "title": "Brown Bears in the Mountain Wilderness",
+    "content": "Grizzly and brown bears roam dense forests and rocky mountains, utilizing their powerful claws and heavy builds to forage for roots, berries, and fish."
+  },
+  {
+    "id": "post-5",
+    "title": "Deep Sea Marine Biology and Coral Reef Ecosystems",
+    "content": "Exploring the abyss of tropical oceans reveals delicate coral structures, deep-sea invertebrates, and bioluminescent marine organisms living in high-pressure aquatic environments."
+  }
+]
